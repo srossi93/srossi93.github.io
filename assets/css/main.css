@@ -590,7 +590,7 @@ h2 {
     padding: 50px 0 50px; } }
 
 h2, header nav a, header .kicker, footer .lockup a, #h_small #nav_small a, #h_small .kicker {
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 700;
   text-transform: uppercase; }
 
@@ -661,7 +661,7 @@ header {
         header nav a {
           display: inline-block; } }
       header nav a:hover {
-        color: black; }
+        color: rgba(64, 80, 113, 1); }
   header h1 {
     text-align: center;
     color: rgba(255, 255, 255, 0.9);
@@ -703,7 +703,7 @@ header {
     color: rgba(255, 255, 255, 0.9); }
 
 footer {
-  background: url(../img/galway3.jpg) center center;
+  background: url(../img/galway2.jpg) center center;
   background-size: cover; }
   footer .lockup {
     padding: 50px 30px; }
@@ -715,13 +715,13 @@ footer {
       margin: 0;
       text-transform: uppercase;
       font-size: 12px;
-      color: rgba(0, 0, 0, 0.4); }
+      color: rgba(255, 255, 255, 0.85); }
     footer .lockup a {
-      color: rgba(0, 0, 0, 0.6);
+      color: rgba(255, 255, 255, 0.85);
       display: inline-block;
       margin-right: 30px; }
       footer .lockup a:hover {
-        color: black; }
+        color: rgba(42, 55, 82, 1); }
 
 @media only screen and (min-width: 220px) {
   .about-lock {
