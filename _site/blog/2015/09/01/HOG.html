@@ -66,10 +66,10 @@
 
 
 <div class="post-header">
-  <h1 class="post-title">Welcome to Jekyll! 1</h1>
+  <h1 class="post-title">Feature Extraction for High Resolution Remote Sensing Image Classification using Histograms of Oriented Gradients</h1>
 </div>
 <div class="post-header">
-  <p class="post-meta">September 2015</p>
+  <p class="post-meta">September 2015 • Simone Rossi & Margherita Piccini & Eugenio Zuccarelli</p>
 </div>
 
 <div class="post-wrapper">
@@ -78,20 +78,31 @@
 
   <article class="post-content">
     <div class = "blurb-blog">
-    <p>You’ll find this post in your <code class="highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+    <p>The last decades have seen a significant increase in the development of automatic classification techniques for digital remote sensing images, allowing this field to become appealing for the environmental monitoring and management (Earth Observation).</p>
 
-<p>To add new posts, simply add a file in the <code class="highlighter-rouge">_posts</code> directory that follows the convention <code class="highlighter-rouge">YYYY-MM-DD-name-of-post.ext</code> and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
+<p>In particular, this thesis aims at the classification of very high resolution (VHR) images, obtained by multispectral optical sensors, for the observation of urban areas.</p>
 
-<p>Jekyll also offers powerful support for code snippets:</p>
+<p>The thesis explores the application of a advanced feature extraction technique, called “histogram of oriented gradients” (HOG), applied to multispectral VHR images. The algorithm, widely used in the human detection area, but new in this context of remote sensing, has been thoroughly analyzed in each phase, highlighting the correspondance between di erent parameter sets and di erent accuracy variations.</p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
-<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+<p>Three relevant cases, regarding the Amiens (France) urban area and observed through the SPOT5 sensor, have been studied.</p>
 
-<p>Check out the <a href="http://jekyllrb.com">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://github.com/jekyll/jekyll-help">Jekyll’s dedicated Help repository</a>.</p>
+<p><a href="../../../../assets/img/blog/Amiens_start.png">
+<img src="../../../../assets/img/blog/Amiens_start.png" alt="DLX" class="post-img" />
+</a></p>
 
+<p>This is an interesting and challenging classification problem, since the imaged area is well diversified, including spatially homogeneous regions (e.g. “water”), highly defined geometrical structures (e.g. “urban areas”) and several ground portions with di erent textures (e.g. “vegetated areas”).</p>
+
+<p><a href="../../../../assets/img/blog/Amiens_classes.png">
+<img src="../../../../assets/img/blog/Amiens_classes.png" alt="DLX" class="post-img" />
+</a></p>
+
+<p>The experimental results have confirmed the opportunity of additional feature extraction, associated with spatial information of the pixel magnitude, in particular in the presence of classes that strongly overlap in terms of spectral response.</p>
+
+<p>In the case studies, regarding the urban areas, the classification, through the HOG implementation, has presented some limitations concerning classes identified by homogeneous areas. However, there were remarkable increases regarding the highly geometrical classes. These results suggest the potential of HOG as a feature extraction tool for urban area mapping and the opportunity to use it together with other feature analysis techniques.</p>
+
+<p><a href="../../../../assets/img/blog/Amiens_final.png">
+<img src="../../../../assets/img/blog/Amiens_final.png" alt="DLX" class="post-img" />
+</a></p>
 
    </div>
   </article>

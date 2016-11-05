@@ -1,0 +1,34 @@
+---
+layout: post
+title:  "Feature Extraction for High Resolution Remote Sensing Image Classification using Histograms of Oriented Gradients"
+date:   September 2015
+author: "Simone Rossi & Margherita Piccini & Eugenio Zuccarelli"
+categories: blog
+abstract: "The thesis explores the application of a feature extraction technique, called ”histogram of oriented gradients” (HOG), applied to multispectral VHR images. Three relevant cases, regarding the Amiens (France) urban area, have been studied and the results suggest the potential of HOG as a feature extraction tool for urban area mapping and the opportunity to use it together with other feature analysis techniques."
+---
+
+The last decades have seen a significant increase in the development of automatic classification techniques for digital remote sensing images, allowing this field to become appealing for the environmental monitoring and management (Earth Observation).
+
+In particular, this thesis aims at the classification of very high resolution (VHR) images, obtained by multispectral optical sensors, for the observation of urban areas.
+
+The thesis explores the application of a advanced feature extraction technique, called "histogram of oriented gradients" (HOG), applied to multispectral VHR images. The algorithm, widely used in the human detection area, but new in this context of remote sensing, has been thoroughly analyzed in each phase, highlighting the correspondance between di erent parameter sets and di erent accuracy variations.
+
+Three relevant cases, regarding the Amiens (France) urban area and observed through the SPOT5 sensor, have been studied.
+
+<a href="../../../../assets/img/blog/Amiens_start.png">
+<img src="../../../../assets/img/blog/Amiens_start.png" alt="DLX" class="post-img"/>
+</a>
+
+This is an interesting and challenging classification problem, since the imaged area is well diversified, including spatially homogeneous regions (e.g. "water"), highly defined geometrical structures (e.g. "urban areas") and several ground portions with di erent textures (e.g. "vegetated areas").
+
+<a href="../../../../assets/img/blog/Amiens_classes.png">
+<img src="../../../../assets/img/blog/Amiens_classes.png" alt="DLX" class="post-img"/>
+</a>
+
+The experimental results have confirmed the opportunity of additional feature extraction, associated with spatial information of the pixel magnitude, in particular in the presence of classes that strongly overlap in terms of spectral response.
+
+In the case studies, regarding the urban areas, the classification, through the HOG implementation, has presented some limitations concerning classes identified by homogeneous areas. However, there were remarkable increases regarding the highly geometrical classes. These results suggest the potential of HOG as a feature extraction tool for urban area mapping and the opportunity to use it together with other feature analysis techniques.
+
+<a href="../../../../assets/img/blog/Amiens_final.png">
+<img src="../../../../assets/img/blog/Amiens_final.png" alt="DLX" class="post-img"/>
+</a>
