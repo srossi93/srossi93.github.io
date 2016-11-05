@@ -1298,16 +1298,22 @@ form {
   .title:hover {
     padding-left: 10px; }
   .post-title {
-    font-size: 42px;
+    font-size: 30px;
     letter-spacing: -1px;
     line-height: 1;
     padding-left: 10px; }
     .post-title:hover {
       padding-left: 10px; }
   .post-meta {
+    font-size: 17px;
     margin-bottom: 0px;
     padding-bottom: 20px;
     padding-left: 10px; }
+    .post-abstract {
+      font-size: 15px;
+      margin-bottom: 0px;
+      padding-bottom: 20px;
+      padding-left: 10px; }
   .post-link {
     display: block;
     font-size: 40px; }
@@ -1327,6 +1333,8 @@ form {
     max-width: 290px;
     margin: 0 auto;
     padding-bottom: 100px; }
+    .post-img {
+      max-width: 290px; }
   .blurb-blog {
     font-size: 15px;
     font-weight: 30; }
@@ -1346,8 +1354,10 @@ form {
     max-width: 650px; }
   .comment {
     max-width: 650px; }
+    .post-img {
+      max-width: 650px; }
   .blurb-blog {
-    font-size: 22px;
+    font-size: 15px;
     font-weight: 30; }
   .honeycombpic {
     width: 650px;
@@ -1365,8 +1375,10 @@ form {
     max-width: 780px; }
   .comment {
     max-width: 780px; }
+    .post-img {
+      max-width: 780px; }
   .blurb-blog {
-    font-size: 22px;
+    font-size: 17px;
     font-weight: 30; }
   .honeycombpic {
     width: 750px;

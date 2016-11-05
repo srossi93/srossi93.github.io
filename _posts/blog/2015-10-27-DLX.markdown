@@ -1,0 +1,30 @@
+---
+layout: post
+title:  "Structural RTL Implementation of a 32-bit MIPS-like Microprocessor with Branch Prediction Unit and Forwarding Logic"
+date:   September 2016
+author: "Simone Rossi & Emanuele Parisi"
+categories: blog
+abstract: "This project is mainly focused on design, simulation and synthesis of a 32-bit DLX microprocessor with Branch Prediction Unit and Forwarding Logic. The microprocessor has been design on a low level RTL using VHDL, simulated and tested, synthesized and physically mapped using Encounter (by Cadence). The device has been proved to successfully work with the MIPS32 Instruction Set Architecture (Integer Operations only)."
+---
+
+This project is mainly focused on design, simulation and synthesis of a 32-bit DLX microprocessor with Branch Prediction Unit and Forwarding Logic. The device has been proved to successfully work with the MIPS32 Instruction Set Architecture (Integer Operations only). The microprocessor has been design on a low level RTL using VHDL and simulated and tested with ModelSim (by Mentor Graphics). This is an example the dump of all signals of the Execution Stage during the simulation of a software multiplication (emulation using shifts and additions only).
+
+<a href="../../../../assets/img/blog/DLX_simulation.png">
+<img src="../../../../assets/img/blog/DLX_simulation.png" alt="DLX" class="post-img"/>
+</a>
+
+Afterwards it has been synthesized with DC Compiler (by Synopsys) targeting two different technology processes: 65 nm using STMicroelectronics libraries, 45 nm using NanGate libraries. (Click on the image to enlarge)
+
+<a href="../../../../assets/img/blog/datapath_full.png">
+<img src="../../../../assets/img/blog/DLX_datapath.png" alt="DLX" class="post-img"/>
+</a>
+
+With STMicroelectronics library, we targeted high performance both in timing and in power. Regarding power consumption, the developed script works both on leakage power and on dynamic power using Dual-Vth assignment and clock gating.
+
+The maximum operating frequency is about 700 MHz and furthermore, both the techniques used to reduce power work as expected. On one hand, about 45% of total cells have been swapped to an high threshold voltage: this means that without modifying the timing constrains, we achieve more than 90% of leakage reduction. On the other hand, clock gating reduces the total dynamic power of about 25%, applying automatically this technique to the 67% of total registers in the design.
+
+Finally, the processor has been physically compiled and mapped using Encounter (by Cadence).
+
+<a href="../../../../assets/img/blog/DLX_encounter.png">
+<img src="../../../../assets/img/blog/DLX_encounter.png" alt="DLX" class="post-img"/>
+</a>

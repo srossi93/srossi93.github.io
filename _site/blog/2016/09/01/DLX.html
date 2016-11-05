@@ -65,10 +65,10 @@
 
 
 <div class="post-header">
-  <h1 class="post-title">Welcome to Jekyll! 3</h1>
+  <h1 class="post-title">Structural RTL Implementation of a 32-bit MIPS-like Microprocessor with Branch Prediction Unit and Forwarding Logic</h1>
 </div>
 <div class="post-header">
-  <p class="post-meta">September 2015</p>
+  <p class="post-meta">September 2016 • Simone Rossi & Emanuele Parisi</p>
 </div>
 
 <div class="post-wrapper">
@@ -77,20 +77,27 @@
 
   <article class="post-content">
     <div class = "blurb-blog">
-    <p>You’ll find this post in your <code class="highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+    <p>This project is mainly focused on design, simulation and synthesis of a 32-bit DLX microprocessor with Branch Prediction Unit and Forwarding Logic. The device has been proved to successfully work with the MIPS32 Instruction Set Architecture (Integer Operations only). The microprocessor has been design on a low level RTL using VHDL and simulated and tested with ModelSim (by Mentor Graphics). This is an example the dump of all signals of the Execution Stage during the simulation of a software multiplication (emulation using shifts and additions only).</p>
 
-<p>To add new posts, simply add a file in the <code class="highlighter-rouge">_posts</code> directory that follows the convention <code class="highlighter-rouge">YYYY-MM-DD-name-of-post.ext</code> and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
+<p><a href="../../../../assets/img/blog/DLX_simulation.png">
+<img src="../../../../assets/img/blog/DLX_simulation.png" alt="DLX" class="post-img" />
+</a></p>
 
-<p>Jekyll also offers powerful support for code snippets:</p>
+<p>Afterwards it has been synthesized with DC Compiler (by Synopsys) targeting two different technology processes: 65 nm using STMicroelectronics libraries, 45 nm using NanGate libraries. (Click on the image to enlarge)</p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
-<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+<p><a href="../../../../assets/img/blog/datapath_full.png">
+<img src="../../../../assets/img/blog/DLX_datapath.png" alt="DLX" class="post-img" />
+</a></p>
 
-<p>Check out the <a href="http://jekyllrb.com">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://github.com/jekyll/jekyll-help">Jekyll’s dedicated Help repository</a>.</p>
+<p>With STMicroelectronics library, we targeted high performance both in timing and in power. Regarding power consumption, the developed script works both on leakage power and on dynamic power using Dual-Vth assignment and clock gating.</p>
 
+<p>The maximum operating frequency is about 700 MHz and furthermore, both the techniques used to reduce power work as expected. On one hand, about 45% of total cells have been swapped to an high threshold voltage: this means that without modifying the timing constrains, we achieve more than 90% of leakage reduction. On the other hand, clock gating reduces the total dynamic power of about 25%, applying automatically this technique to the 67% of total registers in the design.</p>
+
+<p>Finally, the processor has been physically compiled and mapped using Encounter (by Cadence).</p>
+
+<p><a href="../../../../assets/img/blog/DLX_encounter.png">
+<img src="../../../../assets/img/blog/DLX_encounter.png" alt="DLX" class="post-img" />
+</a></p>
 
    </div>
   </article>
