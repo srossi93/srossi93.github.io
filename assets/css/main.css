@@ -701,7 +701,7 @@ header {
     color: rgba(255, 255, 255, 0.9); }
 
 footer {
-  background: url(../img/galway2.jpg) center center;
+  background: url(../img/banner.png) center center;
   background-size: cover; }
   footer .lockup {
     padding: 50px 30px; }
@@ -1386,7 +1386,7 @@ form {
 
 #h_small {
   height: 170px;
-  background: url(../img/galway2.jpg) center center;
+  background: url(../img/banner.png) center center;
   background-size: cover; }
   #h_small #nav_small {
     float: right;
@@ -1394,7 +1394,7 @@ form {
     #h_small #nav_small a {
       display: inline-block;
       margin-left: 10px;
-      color: rgba(0, 0, 0, 0.5); }
+      color: rgba(255, 255, 255, 0.9); }
       #h_small #nav_small a:hover {
         color: black; }
   #h_small #h1_small {
@@ -1411,7 +1411,7 @@ form {
   #h_small .kicker {
     text-align: center;
     line-height: 1;
-    color: rgba(0, 0, 0, 0.5); }
+    color: rgba(255, 255, 255, 0.5); }
 
 .thumb-container {
   max-width: 960px;
