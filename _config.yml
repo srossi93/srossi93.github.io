@@ -1,3 +1,4 @@
 name: Simone Rossi
 markdown: kramdown
 exclude: ["node_modules", "gulpfile.js", "package.json"]
+google_analytics: UA-107703014-1
